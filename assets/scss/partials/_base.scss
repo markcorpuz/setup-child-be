@@ -1,3 +1,6 @@
+/* SETUP CHILD | 1.0.0 | 201105 | assets/scss/partials/base.scss
+---------------------------------------------------------------------------------------------------- */
+
 // Colors
 $white: #fff;
 $grey_1: #FAFAFA;
@@ -14,8 +17,16 @@ $black: #000;
 
 // Brand Colors
 $brand_colors: (
-	'blue'	: #05306F,
-	'grey'	: $grey_1,
+  'purple'    : #660099,    // first color in array used for default button color
+  'blue'      : #0080ff,
+  'teal'      : #00ffff,
+  'red'       : #FF0000,
+  'orange'    : #ff7f00,
+  'yellow'    : #f2d600,
+  'green'     : #61bd4f,
+  'lightgrey' : $grey_2,
+  'grey'      : $grey_5,
+  'darkgrey'  : $grey_8,
 );
 @import "../modules/brand-color";
 
@@ -28,12 +39,28 @@ $highlight: brand-color( 'blue' );
 $border-color: $grey_4;
 
 // Fonts
-$serif: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-$sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+$serif: "EB Garamond", serif;
+$sans-serif: "Rubik", sans-serif;
 
 // Content
 $content-width: 768px;
-$block-margin: 20px;
+$block-margin: 16px;
+
+// Space
+$space-zero: 0;
+$space-px: 0.0625;     // 1px;
+$space-2px: 0.125;     // 2px;
+$space-tiny: 0.25;     // 4px;
+$space-smaller: 0.5;   // 8px;
+$space-base: 1;        // 16px;
+$space-normal: 1.125;  // 18px;
+$space-small: 1.25;    // 20px;
+$space-medium: 1.5;    // 24px;
+$space-large: 2;       // 32px;
+$space-larger: 2.5;    // 40px;
+$space-huge: 3.125;    // 50px;
+$space-large2x: 4;     // 64px;
+$space-huge2x: 6.25;   // 100px;
 
 // Grid
 $grid: grid;
@@ -53,14 +80,16 @@ $persistent_desktop: false; // 49px
 
 // Include Media
 $breakpoints: (
-  'phone'  : 360px,
-  'small'  : 768px,
-  'tablet' : 768px, // required for include-media
-  'mobile_menu' : 768px,
-  'medium' : 992px,
-  'large'  : 1200px,
-  'desktop': $grid-width + $grid-gap, // required for include-media
-  'content-width': $content-width + $grid-gap,
+  'phone'         : 360px,
+  'tiny'          : 360px,
+  'smaller'       : 425px,
+  'small'         : 512px,
+  'tablet'        : 768px, // required for include-media
+  'mobile_menu'   : 768px,
+  'medium'        : 992px,
+  'large'         : 1200px,
+  'desktop'       : $grid-width + $grid-gap, // required for include-media
+  'content-width' : $content-width + $grid-gap,
 );
 
 @import "../modules/helpers";
