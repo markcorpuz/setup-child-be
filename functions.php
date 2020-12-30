@@ -2,8 +2,8 @@
 /**
  * Functions
  *
- * @package      EAGenesisChild
- * @author       Bill Erickson
+ * @package      Setup Child
+ * @author       Mark Corpuz
  * @since        1.0.0
  * @license      GPL-2.0+
 **/
@@ -92,6 +92,8 @@ function ea_child_theme_setup() {
 	include_once( get_stylesheet_directory() . '/inc/loop.php' );
 	include_once( get_stylesheet_directory() . '/inc/author-box.php' );
 	include_once( get_stylesheet_directory() . '/inc/template-tags.php' );
+	include_once( get_stylesheet_directory() . '/inc/items.php' );
+	include_once( get_stylesheet_directory() . '/inc/items-log.php' );
 	include_once( get_stylesheet_directory() . '/inc/site-footer.php' );
 
 	// Editor

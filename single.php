@@ -2,15 +2,15 @@
 /**
  * Single Post
  *
- * @package      EAGenesisChild
- * @author       Bill Erickson
+ * @package      Setup Child
+ * @author       Mark Corpuz
  * @since        1.0.0
  * @license      GPL-2.0+
 **/
 
 // Entry category in header
-add_action( 'genesis_entry_header', 'ea_entry_category', 8 );
-add_action( 'genesis_entry_header', 'ea_entry_author', 12 );
+add_action( 'genesis_entry_header', 'setup_child_overline', 8 );
+add_action( 'genesis_entry_header', 'setup_child_dateauthor', 12 );
 add_action( 'genesis_entry_header', 'ea_entry_header_share', 13 );
 
 /**

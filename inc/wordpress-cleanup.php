@@ -1,4 +1,6 @@
 <?php
+/* SETUP CHILD | 1.0.0 | 201229 | inc/wordpress-cleanup.php
+---------------------------------------------------------------------------------------------------- */
 /**
  * WordPress Cleanup
  *
@@ -68,6 +70,7 @@ function ea_clean_body_classes( $classes ) {
 		'admin-bar',
 		'full-width-content',
 		'content-sidebar',
+		'sidebar-content',
 		'content',
 	];
 
