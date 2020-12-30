@@ -1,14 +1,46 @@
-@import "partials/base";
-@import "partials/reset";
-@import "partials/layout";
-@import "partials/form";
-@import "partials/blocks-base";
-@import "partials/blocks-core";
-@import "partials/blocks-plugin";
-@import "partials/blocks-custom";
-@import "partials/site-header";
-@import "partials/navigation";
-@import "partials/post-summary";
-@import "partials/archive";
-@import "partials/singular";
-@import "partials/site-footer";
+/* SETUP CHILD | 1.0.0 | 201229 | assets/scss/main.scss
+---------------------------------------------------------------------------------------------------- */
+
+@import 	"partials/base";
+@import 	"partials/reset";
+
+@import 	"type/setup-child-100/fontsize";
+@import 	"type/setup-child-100/lineheight";
+
+@import 	"partials/layout";
+@import 	"partials/form";
+@import 	"partials/blocks-base";
+@import 	"partials/blocks-core";
+@import 	"partials/blocks-plugin";
+@import 	"partials/blocks-custom";
+@import 	"partials/site-header";
+@import 	"partials/site-inner";
+@import 	"partials/widget";
+@import 	"partials/navigation";
+@import 	"partials/menu";
+@import 	"partials/post-summary";
+@import 	"partials/archive";
+@import 	"partials/singular";
+@import 	"partials/site-footer";
+
+@import 	"block/setup-be-100/alignwide";
+@import 	"block/setup-be-100/youtube";
+
+// TEMP
+@import 	"ui/setup-be-103/color";
+@import 	"ui/setup-be-100/grid";
+@import 	"ui/setup-be-100/percent";
+@import 	"ui/setup-be-100/width";
+@import 	"ui/setup-be-103/margin";
+@import 	"ui/setup-be-103/margin-all";
+@import 	"ui/setup-be-103/padding";
+@import 	"ui/setup-be-103/padding-all";
+@import 	"ui/setup-be-103/capsule";
+@import 	"ui/setup-child-100/spacer";
+@import 	"ui/setup-be-100/shadow";
+@import 	"ui/setup-be-101/border";
+@import 	"ui/setup-child-100/heading";
+//@import 	"block/setup-be-100/alignwide";
+@import 	"block/setup-be-103/cover";
+@import 	"block/setup-be-100/group";
+@import 	"block/setup-be-100/gallery";

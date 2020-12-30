@@ -1,0 +1,29 @@
+/* SETUP CHILD | 1.0.0 | 201229 | assets/scss/partials/site-inner.scss
+---------------------------------------------------------------------------------------------------- */
+
+.site-inner {
+
+	padding: 1.5rem;
+
+	@include media(">large") {
+		padding: 3rem;
+	}
+
+	.wrap {
+		.content-area {
+			.site-main {}
+			.sidebar {}
+			.sidebar.sidebar-primary {}
+		}
+	}
+
+	.wrap {
+		margin-right: auto;
+		margin-left: auto;
+
+		@include media("<=medium") {}
+		@include media("<=large") {}
+		@include media(">large") {}
+	}
+
+}

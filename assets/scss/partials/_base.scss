@@ -1,4 +1,4 @@
-/* SETUP CHILD | 1.0.0 | 201105 | assets/scss/partials/base.scss
+/* SETUP CHILD | 1.0.0 | 201229 | assets/scss/partials/base.scss
 ---------------------------------------------------------------------------------------------------- */
 
 // Colors
@@ -43,8 +43,31 @@ $serif: "EB Garamond", serif;
 $sans-serif: "Rubik", sans-serif;
 
 // Content
-$content-width: 768px;
 $block-margin: 16px;
+
+// Widths
+$tiny-width: 360px;
+$smaller-width: 425px;
+$small-width: 512px;
+$tablet-width: 768px;
+$medium-width: 1024px;
+$large-width: 1200px;
+
+// Grid
+$grid: grid;
+$grid-width: 1168px;
+$grid-gap: 32px;
+$base-margin: 16px;
+$wrap_edge: $base-margin;
+$margin_2x: $base-margin * 2;
+$margin_4x: $base-margin * 4;
+
+// Layout
+$sidebar-width: 300px;
+//$sidebar-width: $large-width - $tablet-width - $grid-gap;
+$content-width: 768px;
+$cs-width: $large-width;
+$sc-width: $large-width;
 
 // Space
 $space-zero: 0;
@@ -62,15 +85,6 @@ $space-huge: 3.125;    // 50px;
 $space-large2x: 4;     // 64px;
 $space-huge2x: 6.25;   // 100px;
 
-// Grid
-$grid: grid;
-$grid-width: 1168px;
-$grid-gap: 32px;
-$base-margin: 16px;
-$wrap_edge: $base-margin;
-$margin_2x: $base-margin * 2;
-$margin_4x: $base-margin * 4;
-
 // Site Header
 $logo_width: 300px;
 $menu_width: $logo_width + $grid-gap;
@@ -86,8 +100,9 @@ $breakpoints: (
   'small'         : 512px,
   'tablet'        : 768px, // required for include-media
   'mobile_menu'   : 768px,
-  'medium'        : 992px,
+  'medium'        : 1024px,
   'large'         : 1200px,
+  'large-wgap'    : $large-width + $grid-gap,
   'desktop'       : $grid-width + $grid-gap, // required for include-media
   'content-width' : $content-width + $grid-gap,
 );
