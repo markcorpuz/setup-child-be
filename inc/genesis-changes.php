@@ -1,4 +1,6 @@
 <?php
+/* SETUP CHILD BE | 1.0.0 | 210104 | inc/genesis-changes.php
+---------------------------------------------------------------------------------------------------- */
 /**
  * Genesis Changes
  *
@@ -44,7 +46,7 @@ add_filter( 'genesis_edit_post_link', '__return_false' );
 remove_action( 'wp_head', 'genesis_load_favicon' );
 
 // Remove Header Description
-remove_action( 'genesis_site_description', 'genesis_seo_site_description' );
+// remove_action( 'genesis_site_description', 'genesis_seo_site_description' );
 
 // Remove post info and meta
 remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
