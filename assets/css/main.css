@@ -2039,7 +2039,7 @@ div.wpforms-container.one-line:after {
   background-color: #0080ff;
 }
 
-/* SETUP CHILD | 1.0.0 | 201229 | assets/scss/partials/archive.scss
+/* SETUP CHILD | 1.0.0 | 210120 | assets/scss/partials/archive.scss
 ---------------------------------------------------------------------------------------------------- */
 .archive .site-main {
   grid-row-gap: 32px;
@@ -2123,6 +2123,9 @@ div.wpforms-container.one-line:after {
       grid-column: 1/-1;
     }
   }
+}
+.archive .post-summary .item.image {
+  outline: 1px solid #eee;
 }
 
 .archive.content-sidebar .site-main {
@@ -3900,6 +3903,29 @@ a.shadow:link {
 
 .border-darkgray.border-dashed, .border-darkgray {
   border-color: #424242;
+}
+
+.outline,
+.outline-lightgray,
+.outline-gray,
+.outline-darkgray {
+  outline: 1px solid;
+}
+
+.outline-darkgray.outline-dashed, .outline-gray.outline-dashed, .outline-lightgray.outline-dashed {
+  outline: 1px dashed;
+}
+
+.outline-lightgray.outline-dashed, .outline-lightgray {
+  outline-color: #EEEEEE;
+}
+
+.outline-gray.outline-dashed, .outline-gray {
+  outline-color: #BDBDBD;
+}
+
+.outline-darkgray.outline-dashed, .outline-darkgray {
+  outline-color: #424242;
 }
 
 /*  SETUP-CHILD | 1.0.0 | 201229 | setup-be/ui/setup-child-100/heading.scss

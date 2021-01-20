@@ -1,4 +1,4 @@
-/* SETUP CHILD | 1.0.0 | 201229 | assets/scss/partials/archive.scss
+/* SETUP CHILD | 1.0.0 | 210120 | assets/scss/partials/archive.scss
 ---------------------------------------------------------------------------------------------------- */
 
 .archive {
@@ -26,6 +26,13 @@
 		}
 
 	}
+
+	.post-summary {
+		.item.image {
+			outline: 1px solid #eee;
+		}
+	}
+
 }
 
 .archive.content-sidebar {
