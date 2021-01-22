@@ -1,4 +1,4 @@
-/* SETUP CHILD | 1.0.0 | 201229 | assets/scss/partials/post-summary.scss
+/* SETUP CHILD | 1.0.0 | 210120 | assets/scss/partials/post-summary.scss
 ---------------------------------------------------------------------------------------------------- */
 
 // MODULE POST-SUMMARY
@@ -24,6 +24,10 @@
 		.item.img {
 			margin-bottom: 0;
 		}
+	}
+	// ARCHIVE
+	.archive .module.post-summary & {
+		outline: 1px solid #eee;
 	}
 }
 a.item.image.link {
@@ -150,6 +154,10 @@ a.item.bgimage.link {
 			}
 		}
 	}
+	// ARCHIVE
+	.archive .module.post-summary & {
+		font-size: 0.75rem;
+	}
 
 	.module.x2 & {}
 	.module.x3 & {
@@ -209,6 +217,10 @@ a.item.bgimage.link {
 
 	.module.post-summary & {
 		font-size: 1rem;
+	}
+	// ARCHIVE
+	.archive .module.post-summary & {
+		margin-top: 0.5rem;
 	}
 
 	.module.x2 & {}

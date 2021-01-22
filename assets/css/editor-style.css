@@ -1,3 +1,5 @@
+/* SETUP CHILD | 1.0.0 | 210105 | assets/scss/editor-style.scss
+---------------------------------------------------------------------------------------------------- */
 /* SETUP CHILD | 1.0.0 | 201229 | assets/scss/partials/base.scss
 ---------------------------------------------------------------------------------------------------- */
 /**
@@ -728,7 +730,7 @@ div.wpforms-container.one-line:after {
   display: none;
 }
 
-/* SETUP CHILD | 1.0.0 | 201229 | assets/scss/partials/post-summary.scss
+/* SETUP CHILD | 1.0.0 | 210120 | assets/scss/partials/post-summary.scss
 ---------------------------------------------------------------------------------------------------- */
 .module.post-summary .item.image {
   display: block;
@@ -736,6 +738,9 @@ div.wpforms-container.one-line:after {
 }
 .module.post-summary .item.image .item.img {
   margin-bottom: 0;
+}
+.archive .module.post-summary .item.image {
+  outline: 1px solid #eee;
 }
 
 .module.post-summary .item.img {
@@ -871,6 +876,11 @@ div.wpforms-container.one-line:after {
 .module.post-summary .item.dateauthor a:hover {
   color: #0080ff;
 }
+.archive .module.post-summary .item.author,
+.archive .module.post-summary .item.date,
+.archive .module.post-summary .item.dateauthor {
+  font-size: 0.75rem;
+}
 .module.x3 .item.author,
 .module.x3 .item.date,
 .module.x3 .item.dateauthor {
@@ -913,6 +923,9 @@ div.wpforms-container.one-line:after {
  */
 .module.post-summary .item.excerpt {
   font-size: 1rem;
+}
+.archive .module.post-summary .item.excerpt {
+  margin-top: 0.5rem;
 }
 .module.x3 .item.excerpt {
   font-size: 1rem;
@@ -1771,7 +1784,7 @@ p.heading-intro, .padding-large2x-bottom {
 
 /* SETUP-BE | 1.0.3 | 201007 | setup-be/ui/setup-be-103/padding-all.scss
 ---------------------------------------------------------------------------------------------------- */
-/* SETUP-BE | 1.0.1 | 200701 | setup-be/ui/setup-be-101/border.scss
+/*  SETUP-CHILD | 1.0.0 | 210104 | setup-be/ui/setup-child-100/border.scss
 ---------------------------------------------------------------------------------------------------- */
 .border,
 .border-lightgray,
@@ -1780,7 +1793,7 @@ p.heading-intro, .padding-large2x-bottom {
   border: 1px solid;
 }
 
-.border-dashed {
+.border-darkgray.border-dashed, .border-gray.border-dashed, .border-lightgray.border-dashed, .border-dashed {
   border: 1px dashed;
 }
 
@@ -1788,17 +1801,39 @@ p.heading-intro, .padding-large2x-bottom {
   border: 0;
 }
 
-.border.border-lightgray,
-.border-dashed.border-lightgray {
+.border-lightgray.border-dashed, .border-lightgray {
   border-color: #EEEEEE;
 }
-.border.border-gray,
-.border-dashed.border-gray {
+
+.border-gray.border-dashed, .border-gray {
   border-color: #BDBDBD;
 }
-.border.border-darkgray,
-.border-dashed.border-darkgray {
+
+.border-darkgray.border-dashed, .border-darkgray {
   border-color: #424242;
+}
+
+.outline,
+.outline-lightgray,
+.outline-gray,
+.outline-darkgray {
+  outline: 1px solid;
+}
+
+.outline-darkgray.outline-dashed, .outline-gray.outline-dashed, .outline-lightgray.outline-dashed {
+  outline: 1px dashed;
+}
+
+.outline-lightgray.outline-dashed, .outline-lightgray {
+  outline-color: #EEEEEE;
+}
+
+.outline-gray.outline-dashed, .outline-gray {
+  outline-color: #BDBDBD;
+}
+
+.outline-darkgray.outline-dashed, .outline-darkgray {
+  outline-color: #424242;
 }
 
 /*  SETUP-CHILD | 1.0.0 | 201229 | setup-be/ui/setup-child-100/heading.scss
