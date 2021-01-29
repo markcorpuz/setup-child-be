@@ -1,0 +1,24 @@
+/* SETUP CHILD | 1.0.0 | 210128 | assets/scss/partials/custom-logo.scss
+---------------------------------------------------------------------------------------------------- */
+
+/* Custom Logo
+---------------------------------------------------------------------------------------------------- */
+
+.custom-logo-link {
+	img {
+		width: 100%;
+		max-width: 100px;
+		height: auto;
+
+		@include media("<=mobile_menu") {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.site-footer & {
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 1rem;
+		}
+	}
+}

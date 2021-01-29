@@ -18,7 +18,7 @@ remove_action( 'genesis_after_header', 'genesis_do_subnav' );
  */
 function ea_site_header() {
 	echo ea_mobile_menu_toggle();
-	echo ea_search_toggle();
+	//echo ea_search_toggle();
 
 	echo '<nav' . ea_amp_class( 'nav-menu', 'active', 'menuActive' ) . ' role="navigation">';
 	if( has_nav_menu( 'primary' ) ) {

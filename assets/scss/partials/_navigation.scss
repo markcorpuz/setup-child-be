@@ -1,10 +1,12 @@
-/* SETUP CHILD | 1.0.0 | 201229 | assets/scss/partials/navigation.scss
+/* SETUP CHILD | 1.0.0 | 210128 | assets/scss/partials/navigation.scss
 ---------------------------------------------------------------------------------------------------- */
 
 /* Navigation
 ---------------------------------------------------------------------------------------------------- */
 
 .nav-menu {
+
+	margin-left: auto;
 
 	& > * {
 		line-height: 0;
@@ -89,7 +91,7 @@
 
 	@include media(">mobile_menu") {
 
-		.nav-primary,
+		.nav-primary {}
 		.nav-secondary {
 			text-align: center;
 		}
@@ -143,14 +145,15 @@
 
 		&.active {
 			background: $grey_3;
-			border-top: 1px solid $border-color;
+			//border-top: 1px solid $border-color;
 			display: block;
-			margin: 0 -48px;
-			max-width: calc( 100% + 96px );
+			margin-top: 1rem;
+			margin-bottom: 0.5rem;
+			max-width: calc( 100% + 32px );
 		}
 
 		.menu > .menu-item > a {
-			padding: 11px 18px;
+			padding: 1rem;
 		}
 
 		.submenu-expand {
@@ -214,9 +217,7 @@
 }
 
 .site-header .wrap {
-	@include media("<=mobile_menu") {
-		padding: 0 48px;
-	}
+	@include media("<=mobile_menu") {}
 
 	& > .menu-toggle,
 	& > .search-toggle {
@@ -231,7 +232,7 @@
 	}
 
 	& > .menu-toggle {
-		left: 0;
+		right: 0;
 	}
 
 	& > .search-toggle {

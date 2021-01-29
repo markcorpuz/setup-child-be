@@ -1,6 +1,6 @@
-/* SETUP CHILD BE | 1.0.0 | 210104 | assets/scss/main.scss
+/* SETUP CHILD BE | 1.0.0 | 210128 | assets/scss/main.scss
 ---------------------------------------------------------------------------------------------------- */
-/* SETUP CHILD | 1.0.0 | 201229 | assets/scss/partials/base.scss
+/* SETUP CHILD | 1.0.0 | 210128 | assets/scss/partials/base.scss
 ---------------------------------------------------------------------------------------------------- */
 /**
  * Brand Color
@@ -1470,20 +1470,24 @@ div.wpforms-container.one-line:after {
   display: none;
 }
 
-/* SETUP CHILD | 1.0.0 | 201229 | assets/scss/partials/site-header.scss
+/* SETUP CHILD | 1.0.0 | 210128 | assets/scss/partials/site-header.scss
 ---------------------------------------------------------------------------------------------------- */
 /* Site Header
 ---------------------------------------------------------------------------------------------------- */
 .site-header {
-  padding: 1.5rem 0;
   background: #fff;
   position: relative;
   min-height: 49px;
   border-bottom: 1px solid #eee;
+  padding: 0.5rem 1rem;
 }
-.title-area {
-  text-align: center;
+@media (min-width: 1025px) {
+  .site-header .wrap {
+    display: flex;
+    align-items: center;
+  }
 }
+
 .title-area h1.site-title,
 .title-area p.site-title {
   margin: 0;
@@ -1509,10 +1513,9 @@ div.wpforms-container.one-line:after {
 .title-area .site-description {
   margin-bottom: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .title-area {
     float: none;
-    text-align: center;
   }
   .title-area .site-title a {
     padding-bottom: 0;
@@ -1535,6 +1538,27 @@ div.wpforms-container.one-line:after {
 }
 /* Persistent Header
 --------------------------------------------- */
+/* SETUP CHILD | 1.0.0 | 210128 | assets/scss/partials/custom-logo.scss
+---------------------------------------------------------------------------------------------------- */
+/* Custom Logo
+---------------------------------------------------------------------------------------------------- */
+.custom-logo-link img {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+}
+@media (max-width: 1024px) {
+  .custom-logo-link img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.site-footer .custom-logo-link img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
 /* SETUP CHILD | 1.0.0 | 201229 | assets/scss/partials/site-inner.scss
 ---------------------------------------------------------------------------------------------------- */
 .site-inner {
@@ -1568,10 +1592,13 @@ div.wpforms-container.one-line:after {
   font-weight: 700;
   text-transform: uppercase;
 }
-/* SETUP CHILD | 1.0.0 | 201229 | assets/scss/partials/navigation.scss
+/* SETUP CHILD | 1.0.0 | 210128 | assets/scss/partials/navigation.scss
 ---------------------------------------------------------------------------------------------------- */
 /* Navigation
 ---------------------------------------------------------------------------------------------------- */
+.nav-menu {
+  margin-left: auto;
+}
 .nav-menu > * {
   line-height: 0;
 }
@@ -1618,12 +1645,12 @@ div.wpforms-container.one-line:after {
 .nav-menu .submenu-expand svg {
   fill: #757575;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .nav-menu .nav-secondary .menu-item.search {
     padding: 4px 16px 16px;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
   .nav-menu .nav-secondary .menu-item.search {
     margin: 5px 0 0 8px;
   }
@@ -1639,14 +1666,13 @@ div.wpforms-container.one-line:after {
 .nav-menu .nav-primary .menu-item.search button {
   padding: 12px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .nav-menu .nav-primary .menu-item.search {
     display: none;
   }
 }
-@media (min-width: 769px) {
-  .nav-menu .nav-primary,
-.nav-menu .nav-secondary {
+@media (min-width: 1025px) {
+  .nav-menu .nav-secondary {
     text-align: center;
   }
   .nav-menu .nav-primary + .nav-secondary {
@@ -1681,19 +1707,19 @@ div.wpforms-container.one-line:after {
     margin: -48px 0 0 215px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .nav-menu {
     display: none;
   }
   .nav-menu.active {
     background: #EEEEEE;
-    border-top: 1px solid #E0E0E0;
     display: block;
-    margin: 0 -48px;
-    max-width: calc( 100% + 96px );
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    max-width: calc( 100% + 32px );
   }
   .nav-menu .menu > .menu-item > a {
-    padding: 11px 18px;
+    padding: 1rem;
   }
   .nav-menu .submenu-expand {
     top: 0;
@@ -1750,24 +1776,19 @@ div.wpforms-container.one-line:after {
   display: none;
 }
 
-@media (max-width: 768px) {
-  .site-header .wrap {
-    padding: 0 48px;
-  }
-}
 .site-header .wrap > .menu-toggle, .site-header .wrap > .search-toggle {
   position: absolute;
   top: 0;
   width: 48px;
   height: 48px;
 }
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
   .site-header .wrap > .menu-toggle, .site-header .wrap > .search-toggle {
     display: none;
   }
 }
 .site-header .wrap > .menu-toggle {
-  left: 0;
+  right: 0;
 }
 .site-header .wrap > .search-toggle {
   right: 0;
@@ -1791,7 +1812,7 @@ div.wpforms-container.one-line:after {
     margin: 0 auto;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .header-search {
     margin: 0 -48px;
     width: calc( 100% + 96px );

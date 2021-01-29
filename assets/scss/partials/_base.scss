@@ -1,4 +1,4 @@
-/* SETUP CHILD | 1.0.0 | 201229 | assets/scss/partials/base.scss
+/* SETUP CHILD | 1.0.0 | 210128 | assets/scss/partials/base.scss
 ---------------------------------------------------------------------------------------------------- */
 
 // Colors
@@ -99,7 +99,7 @@ $breakpoints: (
   'smaller'       : 425px,
   'small'         : 512px,
   'tablet'        : 768px, // required for include-media
-  'mobile_menu'   : 768px,
+  'mobile_menu'   : 1024px,
   'medium'        : 1024px,
   'large'         : 1200px,
   'large-wgap'    : $large-width + $grid-gap,

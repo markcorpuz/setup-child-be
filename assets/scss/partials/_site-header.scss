@@ -1,4 +1,4 @@
-/* SETUP CHILD | 1.0.0 | 201229 | assets/scss/partials/site-header.scss
+/* SETUP CHILD | 1.0.0 | 210128 | assets/scss/partials/site-header.scss
 ---------------------------------------------------------------------------------------------------- */
 
 	// 360px & ABOVE
@@ -18,17 +18,22 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .site-header {
-	padding: 1.5rem 0;
 	background: $white;
 	position: relative;
 	min-height: 49px;
 	border-bottom: 1px solid #eee;
+	padding: 0.5rem 1rem;
 
-	.wrap {}
+	.wrap {
+
+		@include media(">mobile_menu") {
+			display: flex;
+			align-items: center;
+		}
+	}
 }
 
 .title-area {
-	text-align: center;
 
 	h1.site-title,
 	p.site-title {
@@ -61,7 +66,6 @@
 
 	@include media("<=mobile_menu") {
 		float: none;
-		text-align: center;
 
 		.site-title a {
 			padding-bottom: 0;
