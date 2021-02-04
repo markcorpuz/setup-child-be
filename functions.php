@@ -8,6 +8,9 @@
  * @license      GPL-2.0+
 **/
 
+/* SETUP CHILD | 1.0.0 | 210204 | functions.php
+---------------------------------------------------------------------------------------------------- */
+
 /*
 BEFORE MODIFYING THIS THEME:
 Please read the instructions here (private repo): https://github.com/billerickson/EA-Starter/wiki
@@ -88,6 +91,7 @@ function ea_child_theme_setup() {
 	include_once( get_stylesheet_directory() . '/inc/markup.php' );
 	include_once( get_stylesheet_directory() . '/inc/helper-functions.php' );
 	include_once( get_stylesheet_directory() . '/inc/layouts.php' );
+	include_once( get_stylesheet_directory() . '/inc/custom-logo.php' );
 	include_once( get_stylesheet_directory() . '/inc/navigation.php' );
 	include_once( get_stylesheet_directory() . '/inc/loop.php' );
 	include_once( get_stylesheet_directory() . '/inc/author-box.php' );
