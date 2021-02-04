@@ -1,13 +1,13 @@
-/* SETUP CHILD | 1.0.0 | 201229 | assets/scss/editor-style.scss
+/* SETUP CHILD | 1.0.0 | 210204 | assets/scss/editor-style.scss
 ---------------------------------------------------------------------------------------------------- */
 
-@import "partials/base";
-@import "partials/blocks-base";
-@import "partials/blocks-core";
-@import "partials/blocks-plugin";
-@import "partials/blocks-custom";
-@import "partials/post-summary";
-@import "partials/gutenberg";
+@import 	"partials/base";
+@import 	"partials/blocks-base";
+@import		"partials/blocks-core";
+@import		"partials/blocks-plugin";
+@import		"partials/blocks-custom";
+@import		"partials/post-summary";
+@import		"partials/gutenberg";
 
 @import 	"type/setup-child-100/fontsize";
 @import 	"type/setup-child-100/lineheight";
@@ -16,5 +16,5 @@
 @import 	"ui/setup-be-103/margin-all";
 @import 	"ui/setup-be-103/padding";
 @import 	"ui/setup-be-103/padding-all";
-@import 	"ui/setup-be-101/border";
+@import 	"ui/setup-child-100/border";
 @import 	"ui/setup-child-100/heading";
