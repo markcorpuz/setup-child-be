@@ -1,19 +1,30 @@
-/* SETUP CHILD | 1.0.0 | 201229 | assets/scss/partials/site-inner.scss
+/* SETUP CHILD | 1.0.0 | 210204 | assets/scss/partials/site-inner.scss
 ---------------------------------------------------------------------------------------------------- */
 
 .site-inner {
-
 	padding: 1.5rem;
 
-	@include media(">large") {
+	@include media(">=large") {
 		padding: 3rem;
 	}
 
-	.wrap {
-		.content-area {
-			.site-main {}
-			.sidebar {}
-			.sidebar.sidebar-primary {}
+	.full-width-content & {
+		padding-top: 0;
+		padding-bottom: 0;
+
+		@include media(">=large") {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+	}
+
+	.full-width-content.archive & {
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+
+		@include media(">=large") {
+			padding-top: 3rem;
+			padding-bottom: 3rem;
 		}
 	}
 
@@ -21,9 +32,11 @@
 		margin-right: auto;
 		margin-left: auto;
 
-		@include media("<=medium") {}
-		@include media("<=large") {}
-		@include media(">large") {}
+		.content-area {
+			.site-main {}
+			.sidebar {}
+			.sidebar.sidebar-primary {}
+		}
 	}
 
 }

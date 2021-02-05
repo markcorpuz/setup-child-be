@@ -1,4 +1,4 @@
-/* SETUP CHILD | 1.0.0 | 201229 | assets/scss/partials/site-header.scss
+/* SETUP CHILD | 1.0.0 | 210204 | assets/scss/partials/site-header.scss
 ---------------------------------------------------------------------------------------------------- */
 
 	// 360px & ABOVE
@@ -18,10 +18,9 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .site-header {
-	padding: 1.5rem 0;
+	padding: 1.5rem;
 	background: $white;
 	position: relative;
-	min-height: 49px;
 	border-bottom: 1px solid #eee;
 
 	.wrap {}
@@ -44,30 +43,10 @@
 	}
 
 	// LOGO BACKGROUND
-	.site-title a {
-	  	/*
-	  	background: url(../icons/logo.svg) no-repeat center;
-	  	background-size: contain;
-		display: block;
-		text-indent: -9999em;
-		width: 100%;
-		height: 0;
-		*/
-	}
+	.site-title a {}
 
 	.site-description {
 		margin-bottom: 0;
-	}
-
-	@include media("<=mobile_menu") {
-		float: none;
-		text-align: center;
-
-		.site-title a {
-			padding-bottom: 0;
-			height: 48px;
-			background-size: auto 42px;
-		}
 	}
 
 }

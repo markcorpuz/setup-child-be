@@ -1,4 +1,4 @@
-/* SETUP CHILD | 1.0.0 | 201229 | assets/scss/partials/layout.scss
+/* SETUP CHILD | 1.0.0 | 210204 | assets/scss/partials/layout.scss
 ---------------------------------------------------------------------------------------------------- */
 
 /* Box Sizing
@@ -39,10 +39,10 @@ $percent-content: $content-width * ((100% - $percent-100) / 100%);
 
 .site-inner .wrap {
 
-	max-width: map-get( $breakpoints, 'medium' );
+	max-width: map-get( $breakpoints, 'tablet' );
 
 	.full-width-content & {
-		max-width: map-get( $breakpoints, 'medium' );
+		max-width: map-get( $breakpoints, 'tablet' );
 	}
 
 	.content-sidebar &,
@@ -83,7 +83,7 @@ $percent-content: $content-width * ((100% - $percent-100) / 100%);
 			grid-row-gap: 0;			
 		}
 
-		@include media(">=large-wgap") {
+		@include media(">=large") {
 			grid-column-gap: 0;
 			grid-row-gap: 0;
 		}
@@ -95,17 +95,12 @@ $percent-content: $content-width * ((100% - $percent-100) / 100%);
 		"layout-content"
 		"layout-sidebar";
 
-		@include media(">=tablet") {
-			grid-template-columns: minmax(auto, $tablet-width) $sidebar-width;
-			grid-template-areas:
-			"layout-content layout-sidebar";			
-		}
-
-		@include media(">=large-wgap") {
+		@include media(">=medium") {
 			grid-template-columns: minmax(auto, $tablet-width) 1fr $sidebar-width;
 			grid-template-areas:
-			"layout-content . layout-sidebar";
+			"layout-content . layout-sidebar";			
 		}
+
 	}
 	.sidebar-content & {
 
@@ -114,22 +109,17 @@ $percent-content: $content-width * ((100% - $percent-100) / 100%);
 		"layout-content"
 		"layout-sidebar";
 
-		@include media(">=tablet") {
-			grid-template-columns: $sidebar-width minmax(auto, $tablet-width);
-			grid-template-areas:
-			"layout-sidebar layout-content";
-		}
-
-		@include media(">=large-wgap") {
+		@include media(">=medium") {
 			grid-template-columns: $sidebar-width 1fr minmax(auto, $tablet-width);
 			grid-template-areas:
 			"layout-sidebar . layout-content";
 		}
+
 	}
 }
 
 .footer-widgets .wrap {
-		max-width: map-get( $breakpoints, 'medium' );
+	max-width: map-get( $breakpoints, 'medium' );
 }
 
 /* Screen Reader Text
